@@ -1,12 +1,7 @@
 <!doctype html>
-<!--
- This page is shown when the extension button is clicked, because the
- "browser_action" field in manifest.json contains the "default_popup" key with
- value "popup.html".
- -->
 <html>
   <head>
-    <title>Getting Started Extension's Popup</title>
+    <title>Wikilog</title>
     <style type="text/css">
       body {
         margin: 10px;
@@ -18,32 +13,18 @@
       }
 
       #container {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
+
       }
     </style>
-
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-    -->
-    <script src="popup.js"></script>
   </head>
 
   <body>
-    <h1>Background Color Changer</h1>
-    <div id="container">
-      <span>Choose a color</span>
-      <select id="dropdown">
-        <option selected disabled hidden value=''></option>
-        <option value="white">White</option>
-        <option value="pink">Pink</option>
-        <option value="green">Green</option>
-        <option value="yellow">Yellow</option>
-      </select>
-    </div>
+    <h1>WikiLog</h1>
+    <ol id="container">
+      <li>14/01/2017 - https://en.wikipedia.org/wiki/One_Belt_One_Road_Initiative</li>
+      <li>14/01/2017 - https://en.wikipedia.org/wiki/One_Belt_One_Road_Initiative</li>
+      <li>14/01/2017 - https://en.wikipedia.org/wiki/One_Belt_One_Road_Initiative</li>
+    </ol>
+    <script src="popup.js"></script>
   </body>
 </html>
