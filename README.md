@@ -7,7 +7,7 @@ To Do:
 3. Store the URL. Done.
 4. Store access time with URL. Done.
 5. Display a list of stored URLs. Done.
-6. Make displayed links clickable.
+6. Make displayed links clickable. Done.
 7. Add cloud login.
 8. Store data in the cloud.
 9. Show aggregates.
