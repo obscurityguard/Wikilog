@@ -1,9 +1,10 @@
 
-chrome.tabs.onActivated.addListener(function (tabInfo){
-  chrome.tabs.get(tabInfo.tabId, function (tab){
+chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab){
+  console.log(changeInfo)
+  if (changeInfo.status == "complete"){
     const wikipediaRegex = new RegExp("https:\/\/..\.wikipedia\.org\/wiki\/.+")
     if (wikipediaRegex.test(tab.url)){
-      console.log(localStorage.getItem("urls"))
+      console.log(tab.url)
       if(localStorage.getItem("urls") == null){
         console.log("no urls")
         localStorage.setItem("urls", JSON.stringify([]))
@@ -15,5 +16,5 @@ chrome.tabs.onActivated.addListener(function (tabInfo){
     }
 
 
-  })
+  }
 })
