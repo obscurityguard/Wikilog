@@ -5,7 +5,7 @@ urls = JSON.parse(urls)
 var entries = urls.map(function(entry){
   var date = entry.date
   date = new Date(date)
-  return `<li>${date.toLocaleString('en-AU')} - ${entry.url}</li>`
+  return `<li>${date.toLocaleString('en-AU')} - <a href="${entry.url}" target="_blank">${entry.url}</a></li>`
 })
 document.getElementById("container").innerHTML = entries.join("")
 if(entries.length == 0) {
