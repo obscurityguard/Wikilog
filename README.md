@@ -11,3 +11,6 @@ To Do:
 7. Add cloud login.
 8. Store data in the cloud.
 9. Show aggregates.
+10. Delete history.
+11. Install React. Done.
+12. Switch to React for rendering.
